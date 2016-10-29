@@ -3,4 +3,15 @@ itsdangerous==0.24
 Jinja2==2.8
 MarkupSafe==0.23
 Werkzeug==0.11.5
+beautifulsoup4==4.4.1
+Flask-Cache==0.13.1
+Flask-FlatPages==0.5
+Flask-Login==0.2.9
+Flask-Principal==0.4.0
+Flask-Stormpath==0.4.2
+Flask-WTF==0.11
+functools32==3.2.3.post2
+gunicorn==19.3.0
+virtualenv==15.0.1
+Flask-Blogging==0.7.1
 

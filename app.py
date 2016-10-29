@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.config["SECRET_KEY"] = "secret"  
 app.config["BLOGGING_URL_PREFIX"] = "/blog"
 app.config["BLOGGING_DISQUS_SITENAME"] = "test"
-app.config["BLOGGING_SITEURL"] = "https://ancient-scrubland-67659.herokuapp.com/"
+app.config["BLOGGING_SITEURL"] = "112.133.229.13"
 
 # extensions
 engine = create_engine('sqlite:////tmp/blog.db')

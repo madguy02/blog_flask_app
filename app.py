@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.config["SECRET_KEY"] = "secret"  
 app.config["BLOGGING_URL_PREFIX"] = "/blog"
 app.config["BLOGGING_DISQUS_SITENAME"] = "test"
-app.config["BLOGGING_SITEURL"] = "112.133.229.13"
+app.config["BLOGGING_SITEURL"] = "127.0.0.1:8000"
 
 # extensions
 engine = create_engine('sqlite:////tmp/blog.db')

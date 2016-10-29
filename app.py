@@ -24,7 +24,7 @@ class User(UserMixin):
         self.id = user_id
 
     def get_name(self):
-        return "Paul Dirac"  # typically the user's name
+        return "manish(madguy02)"  # typically the user's name
 
 @login_manager.user_loader
 @blog_engine.user_loader

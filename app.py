@@ -21,7 +21,7 @@ meta.create_all(bind=engine)
 # user class for providing authentication
 class User(UserMixin):
     def __init__(self, user_id):
-        self.id = user_id
+            self.id = user_id
 
     def get_name(self):
         return "manish(madguy02)"  # typically the user's name
@@ -42,8 +42,7 @@ index_template = """
             <a href="/login/">Login</a>
         {% endif %}
         &nbsp&nbsp<a href="/blog/">Blog</a>
-        &nbsp&nbsp<a href="/blog/sitemap.xml">Sitemap</a>
-        &nbsp&nbsp<a href="/blog/feeds/all.atom.xml">ATOM</a>
+        
     </body>
 </html>
 """
@@ -61,8 +60,8 @@ def login():
 @app.route("/logout/")
 def logout():
     logout_user()
-    return redirect("/")
+    return redirect("/login")
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=8000, use_reloader=True)
+    app.run(debug=True, port=8000, use_reloader=False)

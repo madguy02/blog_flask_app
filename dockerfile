@@ -9,19 +9,24 @@ RUN apt-get -y upgrade
 RUN apt-get install -y python-dev python-pip
  
 # Add requirements.txt
-ADD requirements.txt /webapp
+ADD requirements.txt /Videos/blog_app/requirements.txt
  
 # Install uwsgi Python web server
 RUN pip install uwsgi
+#upgrade pip
+RUN pip install --upgrade pip
+RUN wget -O- https://bootstrap.pypa.io/get-pip.py | python
+RUN pip install --upgrade setuptools
+RUN pip install --upgrade virtualenv
 # Install app requirements
-RUN pip install -r requirements.txt
+RUN  pip install -r requirements.txt
  
 # Create app directory
-ADD . /webapp
+ADD . /Videos/blog_app
  
 # Set the default directory for our environment
-ENV HOME /webapp
-WORKDIR /webapp
+ENV HOME /Videos/blog_app
+WORKDIR /Videos/blog_app
  
 # Expose port 8000 for uwsgi
 EXPOSE 8000

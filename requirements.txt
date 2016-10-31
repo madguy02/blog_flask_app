@@ -111,3 +111,4 @@ Werkzeug==0.11.5
 widgetsnbextension==1.2.6
 WTForms==2.0.2
 youtube-dl==2016.2.22
+adium-theme-ubuntu==0.3.4

@@ -73,7 +73,7 @@ pycurl==7.43.0
 PyDispatcher==2.0.5
 Pygments==1.6
 PyJWT==1.3.0
-pylab==0.1.3
+
 pymongo==2.4.1
 PyMySQL==0.7.2
 pyparsing==2.1.8

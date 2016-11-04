@@ -25,7 +25,7 @@ Flask-WTF==0.11
 Frozen-Flask==0.11
 functools32==3.2.3.post2
 gunicorn==19.3.0
-gyp==0.1
+
 html5lib==0.999
 httplib2==0.9.1
 ipykernel==4.5.0
